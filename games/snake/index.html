@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snake · Game Arcade</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/arcade.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../index.html"><span class="brand-mark">▶</span><span>Game Arcade</span></a>
+      <a class="nav-link" href="../../index.html">← Dashboard</a>
+    </header>
+    <main class="arcade-main">
+      <div class="arcade-heading"><div><h1>Snake</h1><p>Eat, grow, and avoid the walls.</p></div></div>
+      <section class="arcade-layout">
+        <div class="arcade-panel">
+          <div class="arcade-toolbar">
+            <div class="arcade-stats"><span>Score <strong id="score">0</strong></span><span>Best <strong id="best">0</strong></span></div>
+            <button class="arcade-button arcade-button-primary" id="start" type="button">Start game</button>
+          </div>
+          <canvas class="arcade-canvas snake-canvas" id="game" width="600" height="600" aria-label="Snake game board"></canvas>
+          <div class="direction-pad" aria-label="Direction controls">
+            <button class="arcade-button direction-up" data-direction="up" type="button" aria-label="Move up">↑</button>
+            <button class="arcade-button direction-left" data-direction="left" type="button" aria-label="Move left">←</button>
+            <button class="arcade-button direction-down" data-direction="down" type="button" aria-label="Move down">↓</button>
+            <button class="arcade-button direction-right" data-direction="right" type="button" aria-label="Move right">→</button>
+          </div>
+        </div>
+        <p class="arcade-help">Use arrow keys or WASD. On phones, use the direction buttons.</p>
+      </section>
+    </main>
+    <script src="snake.js"></script>
+  </body>
+</html>

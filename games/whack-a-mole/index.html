@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Whack-a-Mole · Game Arcade</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/arcade.css" />
+  </head>
+  <body>
+    <header class="site-header"><a class="brand" href="../../index.html"><span class="brand-mark">▶</span><span>Game Arcade</span></a><a class="nav-link" href="../../index.html">← Dashboard</a></header>
+    <main class="arcade-main">
+      <div class="arcade-heading"><div><h1>Whack-a-Mole</h1><p>Catch as many moles as you can in 30 seconds.</p></div></div>
+      <section class="arcade-layout"><div class="arcade-panel">
+        <div class="arcade-toolbar"><div class="arcade-stats"><span>Score <strong id="score">0</strong></span><span>Time <strong id="time">30</strong>s</span></div><button class="arcade-button arcade-button-primary" id="start" type="button">Start game</button></div>
+        <div class="mole-board" id="board" aria-label="Whack-a-Mole holes"></div><p class="status-message" id="status" aria-live="polite">Ready?</p>
+      </div><p class="arcade-help">Tap or click a mole as soon as it pops up.</p></section>
+    </main>
+    <script src="whack-a-mole.js"></script>
+  </body>
+</html>

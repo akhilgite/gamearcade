@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Minesweeper · Game Arcade</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/arcade.css" />
+  </head>
+  <body>
+    <header class="site-header"><a class="brand" href="../../index.html"><span class="brand-mark">▶</span><span>Game Arcade</span></a><a class="nav-link" href="../../index.html">← Dashboard</a></header>
+    <main class="arcade-main">
+      <div class="arcade-heading"><div><h1>Minesweeper</h1><p>Clear the field without hitting a mine.</p></div></div>
+      <section class="arcade-layout"><div class="arcade-panel">
+        <div class="arcade-toolbar"><div class="arcade-stats"><span>Mines <strong id="remaining">12</strong></span></div><div class="arcade-controls"><button class="arcade-button" id="flag-mode" type="button" aria-pressed="false">Flag mode: off</button><button class="arcade-button arcade-button-primary" id="restart" type="button">New game</button></div></div>
+        <div class="mine-board" id="board" aria-label="Minesweeper field"></div><p class="status-message" id="status" aria-live="polite">Reveal a square to begin.</p>
+      </div><p class="arcade-help">Right-click to flag, or turn on Flag mode for touch screens.</p></section>
+    </main>
+    <script src="minesweeper.js"></script>
+  </body>
+</html>

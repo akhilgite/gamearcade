@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pong · Game Arcade</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/arcade.css" />
+  </head>
+  <body>
+    <header class="site-header"><a class="brand" href="../../index.html"><span class="brand-mark">▶</span><span>Game Arcade</span></a><a class="nav-link" href="../../index.html">← Dashboard</a></header>
+    <main class="arcade-main">
+      <div class="arcade-heading"><div><h1>Pong</h1><p>First to five points wins.</p></div></div>
+      <section class="arcade-layout"><div class="arcade-panel">
+        <div class="arcade-toolbar"><div class="arcade-stats"><span>You <strong id="player-score">0</strong></span><span>CPU <strong id="cpu-score">0</strong></span></div><button class="arcade-button arcade-button-primary" id="start" type="button">Start game</button></div>
+        <canvas class="arcade-canvas" id="game" width="520" height="360" aria-label="Pong game"></canvas>
+      </div><p class="arcade-help">Move with ↑ ↓ or W/S. You can also move the paddle with your mouse or finger.</p></section>
+    </main>
+    <script src="pong.js"></script>
+  </body>
+</html>
