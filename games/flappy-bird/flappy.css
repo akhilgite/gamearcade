@@ -1,0 +1,46 @@
+/* Flappy Bird page layout */
+
+.game-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px 32px;
+}
+
+.game-page h1 {
+  margin: 0 0 14px;
+  font-size: 1.5rem;
+}
+
+.game-frame {
+  width: min(400px, 100%, calc((100vh - 220px) * 2 / 3));
+  min-width: 240px;
+  border: 4px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  line-height: 0;
+}
+
+#game {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.game-help {
+  margin: 14px 0 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+kbd {
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  font-family: inherit;
+  font-size: 0.85rem;
+}

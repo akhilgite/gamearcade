@@ -1,0 +1,20 @@
+{
+  "name": "hello-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts HelloVideo out/hello.mp4",
+    "render:race": "remotion render src/index.ts RaceVideo out/race.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.531",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "remotion": "^4.0.531"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}
